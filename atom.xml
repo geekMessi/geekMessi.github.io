@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>geekMessi</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-01-02T15:22:56.828Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Liyuan Wang</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>虚拟机类加载机制</title>
+    <link href="http://yoursite.com/2017/01/02/%E8%99%9A%E6%8B%9F%E6%9C%BA%E7%B1%BB%E5%8A%A0%E8%BD%BD%E6%9C%BA%E5%88%B6/"/>
+    <id>http://yoursite.com/2017/01/02/虚拟机类加载机制/</id>
+    <published>2017-01-02T15:21:33.000Z</published>
+    <updated>2017-01-02T15:22:56.828Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="虚拟机类加载机制"><a href="#虚拟机类加载机制" class="headerlink" title="虚拟机类加载机制"></a>虚拟机类加载机制</h1><ul>
+<li>虚拟机把描述类的数据从Class文件加载到内存中，并对数据进行校验，转换解析和初始化，最终形成可以被虚拟机只直接使用的类型，就是虚拟机的类加载机制。<h3 id="类加载的时机"><a href="#类加载的时机" class="headerlink" title="类加载的时机"></a>类加载的时机</h3></li>
+<li>遇到new，getstatic,putstatic,invokestatic,四条指令时。</li>
+<li>使用java.lang.reflect包的方法对类进行反射调用的时候</li>
+<li>当初始化一个类的时候，如果其父类还没有被初始化，先触发其父类的初始化。</li>
+<li>当虚拟机启动的时候，用户需要指定一个要执行的主类(包含main方法的)，虚拟机会先初始化这个类。</li>
+<li>java.lang.invoke.MethodHandle实例最后的解析结果是REF_getStatic,REF_putstatic,REF_invokestatic的方法时。</li>
+</ul>
+<h3 id="类加载过程"><a href="#类加载过程" class="headerlink" title="类加载过程"></a>类加载过程</h3><ul>
+<li>类从被加载到虚拟机内存中开始，到卸载出内存为止，整个生命周期包括：加载，验证，准备，解析，初始化，使用，卸载。</li>
+<li>类加载过程包括加载，验证，准备，解析，初始化。</li>
+<li></li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;虚拟机类加载机制&quot;&gt;&lt;a href=&quot;#虚拟机类加载机制&quot; class=&quot;headerlink&quot; title=&quot;虚拟机类加载机制&quot;&gt;&lt;/a&gt;虚拟机类加载机制&lt;/h1&gt;&lt;ul&gt;
+&lt;li&gt;虚拟机把描述类的数据从Class文件加载到内存中，并对数据进行校验，转换解析和初
+    
+    </summary>
+    
+      <category term="JVM" scheme="http://yoursite.com/categories/JVM/"/>
+    
+    
+      <category term="JVM" scheme="http://yoursite.com/tags/JVM/"/>
+    
+      <category term="JAVA" scheme="http://yoursite.com/tags/JAVA/"/>
+    
+  </entry>
+  
+</feed>
