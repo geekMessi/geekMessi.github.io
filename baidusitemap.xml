@@ -3,8 +3,9 @@
 
 
     
+    
   <url>
-    <loc>http://www.linkedlist.cn/2017/01/08/Java-Code-Style/</loc>
+    <loc>http://yoursite.com/2017/01/08/Java-Code-Style/</loc>
     <lastmod>2017-01-15T14:54:17.123Z</lastmod>
     <data>
         <display>
@@ -18,7 +19,7 @@
          
            
              
-              <breadCrumb title="Java" url="http://www.linkedlist.cn/categories/Java/"/>
+              <breadCrumb title="Java" url="http://yoursite.com/categories/Java/"/>
           
         </display>
     </data>
