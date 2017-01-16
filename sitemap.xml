@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/about/index.html</loc>
+    
+    <lastmod>2017-01-16T01:52:35.672Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/baidu_verify_S0FhK5Wvcn.html</loc>
     
     <lastmod>2017-01-16T01:22:24.770Z</lastmod>
@@ -40,13 +47,6 @@
     <loc>http://yoursite.com/archives/index.html</loc>
     
     <lastmod>2017-01-02T15:24:55.342Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/about/index.html</loc>
-    
-    <lastmod>2017-01-02T07:59:03.949Z</lastmod>
     
   </url>
   
