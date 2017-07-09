@@ -288,6 +288,156 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/07/09/transactional-norollback-study/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Liyuan Wang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Java界的小学生">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/07/09/transactional-norollback-study/" itemprop="url">Transactional注解踩过的坑-不能回滚</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-09T21:29:38+08:00">
+                2017-07-09
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Spring/" itemprop="url" rel="index">
+                    <span itemprop="name">Spring</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+             <span id="/2017/07/09/transactional-norollback-study/" class="leancloud_visitors" data-flag-title="Transactional注解踩过的坑-不能回滚">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <blockquote>
+<p>方法加上@Transactional注解就万事大吉么？<br>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/07/09/transactional-norollback-study/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/02/22/SSM-integration-demo/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -342,8 +492,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Java/" itemprop="url" rel="index">
-                    <span itemprop="name">Java</span>
+                  <a href="/categories/Spring/" itemprop="url" rel="index">
+                    <span itemprop="name">Spring</span>
                   </a>
                 </span>
 
@@ -388,8 +538,7 @@
 
       
         
-          
-            <h1 id="SSM-框架整合"><a href="#SSM-框架整合" class="headerlink" title="SSM 框架整合"></a>SSM 框架整合</h1><hr>
+          <h1 id="SSM-框架整合"><a href="#SSM-框架整合" class="headerlink" title="SSM 框架整合"></a>SSM 框架整合</h1><hr>
 <h2 id="目录结构"><a href="#目录结构" class="headerlink" title="目录结构"></a>目录结构</h2><pre><code>配置文件分层处理，而不是统一进行配置
      - Resource
         - Spring
@@ -403,24 +552,14 @@
             - resoucre.properties
         logback.xml
         ...
-</code></pre><h2 id="Spring-配置"><a href="#Spring-配置" class="headerlink" title="Spring 配置"></a>Spring 配置</h2><ul>
-<li><p>applicationContext-dao.xml</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</div><div class="line">&lt;beans xmlns="http://www.springframework.org/schema/beans"</div><div class="line">       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" </div><div class="line">       xmlns:context="http://www.springframework.org/schema/context"</div><div class="line">       xsi:schemaLocation="http://www.springframework.org/schema/beans</div><div class="line">    http://www.springframework.org/schema/beans/spring-beans.xsd</div><div class="line">    http://www.springframework.org/schema/context</div><div class="line">    http://www.springframework.org/schema/context/spring-context.xsd"&gt;</div><div class="line"></div><div class="line">    &lt;!-- 配置整合mybatis过程 --&gt;</div><div class="line"></div><div class="line">    &lt;!-- 1.配置数据库相关参数properties的属性： --&gt;</div><div class="line">    &lt;!--jdbc.driver=com.mysql.jdbc.Driver</div><div class="line">        jdbc.url=jdbc:mysql://localhost:3306/database_name?useUnicode=true&amp;characterEncoding=utf8</div><div class="line">        jdbc.username=root</div><div class="line">        jdbc.password=123456</div><div class="line">    --&gt;</div><div class="line"></div><div class="line">    &lt;context:property-placeholder location="classpath:resource/jdbc.properties" /&gt;</div><div class="line"></div><div class="line">    &lt;!-- 2.数据库连接池 --&gt;</div><div class="line">    &lt;bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"&gt;</div><div class="line">        &lt;!-- 配置连接池属性 --&gt;</div><div class="line">        &lt;property name="driverClass" value="$&#123;jdbc.driver&#125;" /&gt;</div><div class="line">        &lt;property name="jdbcUrl" value="$&#123;jdbc.url&#125;" /&gt;</div><div class="line">        &lt;property name="user" value="$&#123;jdbc.username&#125;" /&gt;</div><div class="line">        &lt;property name="password" value="$&#123;jdbc.password&#125;" /&gt;</div><div class="line"></div><div class="line">        &lt;!-- c3p0连接池的私有属性 --&gt;</div><div class="line">        &lt;property name="maxPoolSize" value="30" /&gt;</div><div class="line">        &lt;property name="minPoolSize" value="10" /&gt;</div><div class="line">        &lt;property name="initialPoolSize" value="3" /&gt;</div><div class="line">        &lt;!-- 关闭连接后不自动commit --&gt;</div><div class="line">        &lt;property name="autoCommitOnClose" value="false" /&gt;</div><div class="line">        &lt;!-- 获取连接超时时间 --&gt;</div><div class="line">        &lt;property name="checkoutTimeout" value="10000" /&gt;</div><div class="line">        &lt;!-- 当获取连接失败重试次数 --&gt;</div><div class="line">        &lt;property name="acquireRetryAttempts" value="2" /&gt;</div><div class="line">    &lt;/bean&gt;</div><div class="line"></div><div class="line">    &lt;!-- 3.配置SqlSessionFactory对象 --&gt;</div><div class="line">    &lt;bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean"&gt;</div><div class="line">        &lt;!-- 注入数据库连接池 --&gt;</div><div class="line">        &lt;property name="dataSource" ref="dataSource" /&gt;</div><div class="line">        &lt;!-- 配置MyBaties全局配置文件:mybatis-config.xml --&gt;</div><div class="line">        &lt;property name="configLocation" value="classpath:mybatis/mybatis-config.xml" /&gt;</div><div class="line">    &lt;/bean&gt;</div><div class="line"></div><div class="line">    &lt;!-- 4.配置扫描Dao接口包，动态实现Dao接口，注入到spring容器中 --&gt;</div><div class="line">    &lt;!--MapperScannerConfigurer：mapper的扫描器，将包下边的mapper接口自动创建代理对象--&gt;</div><div class="line">    &lt;bean class="org.mybatis.spring.mapper.MapperScannerConfigurer"&gt;</div><div class="line">        &lt;!-- 注入sqlSessionFactory --&gt;</div><div class="line">        &lt;property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" /&gt;</div><div class="line">        &lt;!-- 给出需要扫描Dao接口包 --&gt;</div><div class="line">        &lt;property name="basePackage" value="com.*.dao" /&gt;</div><div class="line">    &lt;/bean&gt;</div><div class="line">&lt;/beans&gt;</div></pre></td></tr></table></figure>
-</li>
-<li><p>applicationContext-service.xml</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</div><div class="line">&lt;beans xmlns="http://www.springframework.org/schema/beans"</div><div class="line">    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" </div><div class="line">    xmlns:context="http://www.springframework.org/schema/context"</div><div class="line">    xmlns:tx="http://www.springframework.org/schema/tx"</div><div class="line">    xsi:schemaLocation="http://www.springframework.org/schema/beans</div><div class="line">    http://www.springframework.org/schema/beans/spring-beans.xsd</div><div class="line">    http://www.springframework.org/schema/context</div><div class="line">    http://www.springframework.org/schema/context/spring-context.xsd</div><div class="line">    http://www.springframework.org/schema/tx</div><div class="line">    http://www.springframework.org/schema/tx/spring-tx.xsd"&gt;</div><div class="line">    &lt;!-- 扫描service包下所有使用注解的类型 --&gt;</div><div class="line">    &lt;context:component-scan base-package="com.*.service" /&gt;</div><div class="line"></div><div class="line">    &lt;!-- 配置事务管理器 --&gt;</div><div class="line">    &lt;bean id="transactionManager"</div><div class="line">        class="org.springframework.jdbc.datasource.DataSourceTransactionManager"&gt;</div><div class="line">        &lt;!-- 注入数据库连接池 --&gt;</div><div class="line">        &lt;property name="dataSource" ref="dataSource" /&gt;</div><div class="line">    &lt;/bean&gt;</div><div class="line"></div><div class="line">    &lt;!-- 配置基于注解的声明式事务 --&gt;</div><div class="line">    &lt;tx:annotation-driven transaction-manager="transactionManager" /&gt;</div><div class="line">&lt;/beans&gt;</div></pre></td></tr></table></figure>
-</li>
-<li><p>springmvc.xml</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;?xml version="1.0" encoding="UTF-8"?&gt;</div><div class="line">&lt;beans xmlns="http://www.springframework.org/schema/beans"</div><div class="line">    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"</div><div class="line">    xmlns:context="http://www.springframework.org/schema/context"</div><div class="line">    xmlns:mvc="http://www.springframework.org/schema/mvc" </div><div class="line">    xsi:schemaLocation="http://www.springframework.org/schema/beans</div><div class="line">    http://www.springframework.org/schema/beans/spring-beans.xsd</div><div class="line">    http://www.springframework.org/schema/context</div><div class="line">    http://www.springframework.org/schema/context/spring-context.xsd</div><div class="line">    http://www.springframework.org/schema/mvc</div><div class="line">    http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd"&gt;</div><div class="line">    &lt;!-- 配置SpringMVC --&gt;</div><div class="line">    &lt;!-- 1.开启SpringMVC注解模式 --&gt;</div><div class="line">    &lt;mvc:annotation-driven /&gt;</div><div class="line">    </div><div class="line">    &lt;!-- 2.静态资源默认servlet配置</div><div class="line">        (1)加入对静态资源的处理：js,gif,png</div><div class="line">        (2)允许使用"/"做整体映射</div><div class="line">     --&gt;</div><div class="line">     &lt;mvc:default-servlet-handler/&gt;</div><div class="line"></div><div class="line">     &lt;!-- 3.配置jsp 显示ViewResolver --&gt;</div><div class="line">     &lt;bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"&gt;</div><div class="line">        &lt;property name="viewClass" value="org.springframework.web.servlet.view.JstlView" /&gt;</div><div class="line">        &lt;property name="prefix" value="/WEB-INF/jsp/" /&gt;</div><div class="line">        &lt;property name="suffix" value=".jsp" /&gt;</div><div class="line">     &lt;/bean&gt;</div><div class="line">     </div><div class="line">     &lt;!-- 4.扫描web相关的bean --&gt;</div><div class="line">     &lt;context:component-scan base-package="com.*.controller" /&gt;</div><div class="line">&lt;/beans&gt;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="Mybatis-配置"><a href="#Mybatis-配置" class="headerlink" title="Mybatis 配置"></a>Mybatis 配置</h2><ul>
-<li>mybatis-config.xml<figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;?xml version="1.0" encoding="UTF-8" ?&gt;</div><div class="line">&lt;!DOCTYPE configuration</div><div class="line">PUBLIC "-//mybatis.org//DTD Config 3.0//EN"</div><div class="line">"http://mybatis.org/dtd/mybatis-3-config.dtd"&gt;</div><div class="line">&lt;configuration&gt;</div><div class="line">    &lt;!-- 配置全局属性 --&gt;</div><div class="line">    &lt;settings&gt;</div><div class="line">        &lt;!-- 使用jdbc的getGeneratedKeys获取数据库自增主键值 --&gt;</div><div class="line">        &lt;setting name="useGeneratedKeys" value="true" /&gt;</div><div class="line"></div><div class="line">        &lt;!-- 使用列别名替换列名 默认:true --&gt;</div><div class="line">        &lt;setting name="useColumnLabel" value="true" /&gt;</div><div class="line"></div><div class="line">        &lt;!-- 开启驼峰命名转换:Table&#123;create_time&#125; -&gt; Entity&#123;createTime&#125; --&gt;</div><div class="line">        &lt;setting name="mapUnderscoreToCamelCase" value="true" /&gt;</div><div class="line">    &lt;/settings&gt;</div><div class="line">    </div><div class="line">    &lt;!-- </div><div class="line">    &lt;plugins&gt;</div><div class="line">        &lt;plugin interceptor=""&gt;</div><div class="line">        &lt;/plugin&gt;</div><div class="line">    &lt;/plugins&gt;</div><div class="line">    --&gt;</div><div class="line">&lt;/configuration&gt;</div></pre></td></tr></table></figure>
-</li>
-</ul>
-<h2 id="web-xml-配置"><a href="#web-xml-配置" class="headerlink" title="web.xml 配置"></a>web.xml 配置</h2><figure class="highlight"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">&lt;web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"</div><div class="line">    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee</div><div class="line">                      http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"</div><div class="line">    version="3.1" metadata-complete="true"&gt;</div><div class="line">    </div><div class="line">    &lt;display-name&gt;APP-WEB&lt;/display-name&gt;</div><div class="line">    &lt;welcome-file-list&gt;</div><div class="line">        &lt;welcome-file&gt;index.html&lt;/welcome-file&gt;</div><div class="line">        &lt;welcome-file&gt;index.htm&lt;/welcome-file&gt;</div><div class="line">        &lt;welcome-file&gt;index.jsp&lt;/welcome-file&gt;</div><div class="line">        &lt;welcome-file&gt;default.html&lt;/welcome-file&gt;</div><div class="line">        &lt;welcome-file&gt;default.htm&lt;/welcome-file&gt;</div><div class="line">        &lt;welcome-file&gt;default.jsp&lt;/welcome-file&gt;</div><div class="line">    &lt;/welcome-file-list&gt;</div><div class="line">    </div><div class="line">    &lt;!-- 加载spring容器 --&gt;</div><div class="line">    &lt;context-param&gt;</div><div class="line">        &lt;param-name&gt;contextConfigLocation&lt;/param-name&gt;</div><div class="line">        &lt;param-value&gt;classpath:spring/applicationContext-*.xml         &lt;/param-value&gt;</div><div class="line">    &lt;/context-param&gt;</div><div class="line">    </div><div class="line">    &lt;listener&gt;</div><div class="line">        &lt;listener-class&gt;org.springframework.web.context.ContextLoaderListener&lt;/listener-class&gt;</div><div class="line">    &lt;/listener&gt;</div><div class="line">    </div><div class="line">    &lt;!-- 解决post乱码 --&gt;</div><div class="line">    &lt;filter&gt;</div><div class="line">        &lt;filter-name&gt;CharacterEncodingFilter&lt;/filter-name&gt;</div><div class="line">        &lt;filter-class&gt;org.springframework.web.filter.CharacterEncodingFilter&lt;/filter-class&gt;</div><div class="line">        &lt;init-param&gt;</div><div class="line">            &lt;param-name&gt;encoding&lt;/param-name&gt;</div><div class="line">            &lt;param-value&gt;utf-8&lt;/param-value&gt;</div><div class="line">        &lt;/init-param&gt;</div><div class="line">    &lt;/filter&gt;</div><div class="line">    </div><div class="line">    &lt;filter-mapping&gt;</div><div class="line">        &lt;filter-name&gt;CharacterEncodingFilter&lt;/filter-name&gt;</div><div class="line">        &lt;url-pattern&gt;/*&lt;/url-pattern&gt;</div><div class="line">    &lt;/filter-mapping&gt;</div><div class="line">    </div><div class="line">    &lt;!-- 配置DispatcherServlet --&gt;</div><div class="line">    &lt;servlet&gt;</div><div class="line">        &lt;servlet-name&gt;mvc-dispatcher&lt;/servlet-name&gt;</div><div class="line">        &lt;servlet-class&gt;org.springframework.web.servlet.DispatcherServlet&lt;/servlet-class&gt;</div><div class="line">        &lt;!-- 配置springMVC需要加载的配置文件</div><div class="line">         --&gt;</div><div class="line">        &lt;init-param&gt;</div><div class="line">            &lt;param-name&gt;contextConfigLocation&lt;/param-name&gt;</div><div class="line">            &lt;param-value&gt;classpath:spring/springmvc.xml&lt;/param-value&gt;</div><div class="line">        &lt;/init-param&gt;</div><div class="line">        &lt;load-on-startup&gt;1&lt;/load-on-startup&gt;`</div><div class="line">    &lt;/servlet&gt;</div><div class="line">    </div><div class="line">    &lt;servlet-mapping&gt;</div><div class="line">        &lt;servlet-name&gt;mvc-dispatcher&lt;/servlet-name&gt;</div><div class="line">        &lt;!-- 默认匹配所有的请求 --&gt;</div><div class="line">        &lt;url-pattern&gt;/&lt;/url-pattern&gt;</div><div class="line">    &lt;/servlet-mapping&gt;</div><div class="line">&lt;/web-app&gt;</div></pre></td></tr></table></figure>
-
-          
+</code></pre>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2017/02/22/SSM-integration-demo/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -647,7 +786,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -658,7 +797,7 @@
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -669,7 +808,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">6</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

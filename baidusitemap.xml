@@ -4,8 +4,30 @@
 
     
   <url>
+    <loc>http://yoursite.com/2017/07/09/transactional-norollback-study/</loc>
+    <lastmod>2017-07-09T13:50:50.130Z</lastmod>
+    <data>
+        <display>
+        <title>Transactional注解踩过的坑-不能回滚</title>
+        <pubTime>2017-07-09T13:29:38.000Z</pubTime>
+        
+        <tag>Spring</tag>
+         
+        <tag>Transactional</tag>
+         
+         
+           
+             
+              <breadCrumb title="Spring" url="http://yoursite.com/categories/Spring/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/02/22/SSM-integration-demo/</loc>
-    <lastmod>2017-02-22T05:38:35.141Z</lastmod>
+    <lastmod>2017-07-09T13:50:40.810Z</lastmod>
     <data>
         <display>
         <title>SSM 整合配置</title>
@@ -24,7 +46,7 @@
          
            
              
-              <breadCrumb title="Java" url="http://yoursite.com/categories/Java/"/>
+              <breadCrumb title="Spring" url="http://yoursite.com/categories/Spring/"/>
           
         </display>
     </data>
